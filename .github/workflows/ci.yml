@@ -27,7 +27,7 @@ jobs:
           python -m pip install ".[dev]"
       - name: CLI smoke
         run: |
-          agentdocs-doctor
+          agentdocs-doctor --help
           agentdocs-doctor --version
       - name: Tests
         run: python -m pytest -q
